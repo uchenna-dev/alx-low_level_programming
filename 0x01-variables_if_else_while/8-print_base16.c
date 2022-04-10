@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Print all the digit of base 16 in lowercase
+ * Description: Print all the digits of base 16 in lowercase
  * Return : 0
  */
 int main(void)
