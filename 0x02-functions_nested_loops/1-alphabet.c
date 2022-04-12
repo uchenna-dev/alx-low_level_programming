@@ -5,7 +5,7 @@
  *
  * Printing alphabets in lowercase
  */
-void print_alphabet(void)
+void print_alphabet(void);
 {
 char d;
 for (d = 'a'; d <= 'z'; d++)
