@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - print alphabet lowercase
  *
- * Printing alphabets in lowercase
+ * Return: Always 0.
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char d;
 for (d = 'a'; d <= 'z'; d++)
