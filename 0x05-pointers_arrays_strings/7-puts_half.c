@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 /**
  * puts_half - prints every other character of a string
  * @str: A pointer to an int that will be changed
@@ -11,7 +11,7 @@ int i, last;
 i = 0;
 while (str[i] != '\0')
 {
-i++
+i++;
 }
 last = (i + 1) / 2;
 for (i = last; str[i]; i++)
@@ -20,12 +20,3 @@ _putchar (str[i]);
 }
 _putchar ('\n');
 }
-
-
-
-
-
-
-
-
-
