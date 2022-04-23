@@ -18,6 +18,7 @@ if (n < 0)
 {
 
 _putchar('-');
+
 neg = 1;
 
 }
@@ -44,6 +45,7 @@ else
 _putchar((n / power % 10) * -1 + '0');
 
 power /= 10;
+
 }
 if (power == 1)
 {
@@ -55,6 +57,7 @@ _putchar((n % 10) * -1 + '0');
 else
 
 _putchar(n % 10 + '0');
+
 power = 0;
 }
 }
