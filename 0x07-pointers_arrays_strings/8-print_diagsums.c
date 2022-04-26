@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 /**
  * print_diagsums - print the sum of two diagonal square metrix
  *
