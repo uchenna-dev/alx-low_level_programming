@@ -1,36 +1,61 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes the words of a string
- * @s: string
- * Return: s
+ *cap_string - capitalizes all words of a string.
+ *@s: string to use.
+ *
+ *Return: string.
  */
+
 char *cap_string(char *s)
+
 {
-int x, y;
-int trigger;
-char nots[] = ",;.!?(){}\nt\" ";
-for (x = 0, trigger = 0; s[x] != '\0'; x++)
-{
+int i = 1, j, check;
+
+char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
+
 if (s[0] > 96 && s[0] < 123)
-trigger = 1;
-for (y = 0; nots[y] != '\0'; y++)
+s[0] -= 32;
+
+while (s[i] != '\0')
+	
 {
-if (nots[y] == s[x])
-trigger = 1;
-}
-if (trigger)
-{ 
-if (s[x] > 96 && s[x] < 123)
+
+if (s[i] > 96 && s[i] < 123)
+		
 {
-s[x] -= 32;
-trigger = 0;
+
+j = 0;
+
+check = 0;
+			
+while (check == 0 && j < 13)
+
+{
+
+if (s[i - 1] == a[j])
+				
+{
+					
+check = 1;
+				
 }
-else if (s[x] > 64 && s[x] < 91)
-trigger = 0;
-else if (s[x] > 47 && s[x] < 58)
-trigger = 0;
+
+j++;
+			
+}
+			
+if (check == 1)
+			
+{
+
+s[i] -= 32;
+			
 }
 }
+		
+i++;
+}
+
 return (s);
 }
