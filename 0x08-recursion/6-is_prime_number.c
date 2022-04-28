@@ -19,25 +19,20 @@ return (prime(n, 2));
 }
 
 /*
- * my_sqrt - returns sqrt of number
+ * my sqrt - returns sqrt of number
  *@x: number
  * @i: number acting as divisor
  * Return: square root of x
  */
 int my_sqrt(int x, int i)
-
 {
 int square;
-
 square = i * i;
-
 if (square >= x)
 return (i);
-
 else
 return (my_sqrt(x, i + 1));
 }
-
 /**
  * prime - helper function to find prime
  * @n: number
