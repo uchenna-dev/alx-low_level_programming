@@ -19,6 +19,7 @@ return (halp(n, 1));
  */
 
 int halp(int c, int i)
+
 {
 int square;
 
