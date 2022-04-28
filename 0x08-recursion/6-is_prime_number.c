@@ -24,8 +24,8 @@ return (prime(n, 2));
  * @i: number acting as divisor
  * Return: square root of x
  */
-
 int my_sqrt(int x, int i)
+
 {
 int square;
 
