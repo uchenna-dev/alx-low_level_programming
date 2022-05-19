@@ -1,0 +1,1 @@
+my functions, pointers readme
