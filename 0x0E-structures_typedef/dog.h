@@ -1,49 +1,25 @@
-#include "dog.h"
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef STRUCTS
+#define STRUCTS
 /**
- * new_dog - is a function that creates a new dog
- * @name: is a pointer to name
- * @age: is a pointer to age
- * @owner: is a pointer owner
- * Return: pointer to new_dog
+ * struct dog - description for a pet
+ * @name: pet name
+ * @age: pet age
+ * @owner: owner
+ *
+ * Description: Longer description
  */
-dog_t *new_dog(char *name, float age, char *owner)
+typedef struct dog
 {
-
-	int i = 0, j = 0, m;
-	dog_t *dogo;
-
-	while (name[i] != '\0')
-		i++;
-	while (owner[j] != '\0')
-		j++;
-
-	dogo = malloc(sizeof(dog_t));
-	if (dogo == NULL)
-	{
-		free(dogo);
-		return (NULL);
-	}
-	dogo->name = malloc(i * sizeof(dogo->name));
-	if (dogo->name == NULL)
-	{
-		free(dogo->name);
-		free(dogo);
-		return (NULL);
-	}
-	for (m = 0; m <= i; m++)
-		dogo->name[m] = name[m];
-	dogo->age = age;
-	dogo->owner = malloc(j * sizeof(dogo->owner));
-	if (dogo->owner == NULL)
-	{
-		free(dogo->owner);
-		free(dogo->name);
-		free(dogo);
-		return (NULL);
-	}
-	for (m = 0; m <= j; m++)
-		dogo->owner[m] = owner[m];
-	return (dogo);
-}
+	char *name;
+	float age;
+	char *owner;
+} dog_t;
+#endif
+#ifndef _FUNCTIONS_H
+#define _FUNCTIONS_H
+int _putchar(char c);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif
