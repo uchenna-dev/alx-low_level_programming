@@ -3,7 +3,7 @@
 
 /*
  * File: lists.h
- * Auth: ike victoria uche
+ * Auth: Ukonu Divine Chisom
  * Desc: Header file containing prototypes and definitions for all functions
  *       and types written in the 0x11-singly_linked_lists directory.
  */
